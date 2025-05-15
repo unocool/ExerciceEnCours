@@ -27,9 +27,9 @@ public class ListeDocuments {
 	}
 	
 	public void afficherAuteur(String auteur) {
+		System.out.println("L'auteur "+auteur+" possèdes les livres :");
 		for (int i = 0 ;  i < docs.size() ; i++) {
 			if (docs.get(i) instanceof Livre) {
-				System.out.println("L'auteur "+auteur+" possèdes les livres :");
 				if(auteur.equals(((Livre) docs.get(i)).getAuteur())) {
 					System.out.println(((Livre)docs.get(i)).getTitre());
 				}
